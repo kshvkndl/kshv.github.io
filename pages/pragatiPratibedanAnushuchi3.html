@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link href="../assets/vendor/fonts/circular-std/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/libs/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/fonts/fontawesome/css/fontawesome-all.css"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/charts/morris-bundle/morris.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/fonts/flag-icon-css/flag-icon.min.css"
+    />
+    <link rel="stylesheet" href="../assets/libs/css/style.css" />
+
+    <title>Yojana Concept - Bootstrap 4 Admin Dashboard Template</title>
+  </head>
+
+  <body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+      <!-- ============================================================== -->
+      <!-- navbar -->
+      <!-- ============================================================== -->
+      <div class="dashboard-header hidden-print-area">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../assets/images/gov-nepal.png"
+              alt="government nepal logo"
+              width="50px"
+              height="50px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto navbar-right-top">
+              <li class="nav-item">
+                <div id="custom-search" class="top-search-bar">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Search Here..."
+                  />
+                </div>
+              </li>
+
+              <!-- notification top bar -->
+
+
+              <!-- user-nav account -->
+              <li class="nav-item dropdown nav-user">
+                <a
+                  class="nav-link nav-user-img"
+                  href="../index.html"
+                  id="navbarDropdownMenuLink2"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  ><img
+                  src="../assets/images/avatar-1.jpg"
+                    alt=""
+                    class="user-avatar-md rounded-circle"
+                /></a>
+                <div
+                  class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+                  aria-labelledby="navbarDropdownMenuLink2"
+                >
+                  <div class="nav-user-info">
+                    <h5 class="mb-0 text-white nav-user-name">Xynamexy Name</h5>
+                    <span class="status"></span
+                    ><span class="ml-2">Available</span>
+                  </div>
+                  <a class="dropdown-item" href="./UserAccount.html"
+                    ><i class="fas fa-user mr-2"></i>Account</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-cog mr-2"></i>Setting</a
+                  >
+                  <a class="dropdown-item" href="login.html"
+                    ><i class="fas fa-power-off mr-2"></i>Logout</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- ============================================================== -->
+      <!-- end navbar -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- left sidebar -->
+      <!-- ============================================================== -->
+      <div class="nav-left-sidebar sidebar-dark">
+        <div class="menu-list">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="d-xl-none d-lg-none" href="../index.html">Dashboard</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav flex-column">
+                <li class="nav-divider">
+                  Project Management Menu
+                </li>
+                <li class="nav-item ">
+                    <a
+                      class="nav-link"
+                      href="../index.html"
+                      data-toggle="collapse"
+                      aria-expanded="false"
+                      data-target="#submenu-1"
+                      aria-controls="submenu-1"
+                      ><i class="fa fa-fw fa-user-circle "></i>Dashboard
+                    </a>
+                    <div id="submenu-1" class="collapse submenu">
+                      <ul class="nav flex-column">
+                 </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html"
+                          >Dashboard</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="#"
+                          data-toggle="collapse"
+                          aria-expanded="false"
+                          data-target="#submenu-1-1"
+                          aria-controls="submenu-1-1" 
+                          aria-readonly="true"
+                          >Any Others</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item ">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    data-target="#submenu-2"
+                    aria-controls="submenu-2"
+                    ><i class="fas fa-cog"></i>सामान्य सेटअप </a
+                  >
+                  <div id="submenu-2" class="collapse submenu">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="./karyalaya.html"
+                          >कार्यालय
+                         </a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./yekaiSetup.html"
+                          >एकाई सेटअप </a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./yojanaSamagriSetup.html"
+                          >योजना सामग्री सेटअप</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./yojana.html"
+                          >योजना</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./karyakram.html"
+                          >कार्यक्रम </a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./thekadaarUpabhoktaSamiti.html"
+                          >ठेकदार/उपभोक्ता समिति</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./jilla.html"
+                        >
+                        जिल्ला</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./bank.html"
+                        >
+                        बैंक</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./aarthikBarsha.html"
+                        >
+                        आर्थिक बर्ष</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"
+                        >
+                        अन्न्ने</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link "
+                    href="#"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    data-target="#submenu-3"
+                    aria-controls="submenu-3"
+                    ><i class="fas fa-briefcase"></i>कारोबार</a
+                  >
+                  <div id="submenu-3" class="collapse submenu">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link " href="./wodaAnusharKaryakram.html"
+                          >वडा अनुसार कार्यक्रम</a
+                        >
+                      </li>
+
+                      <!-- --------------- -->
+
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="#"
+                          data-toggle="collapse"
+                          aria-expanded="false"
+                          data-target="#submenu-1-1-1"
+                          aria-controls="submenu-1-1-1" 
+                          aria-readonly="true"
+                          ><i class="fas fa-briefcase"></i>टिप्पणी र आदेश</a
+                        >
+                        <div id="submenu-1-1-1" class="collapse submenu">
+                          <ul class="nav flex-column">
+                     
+
+                          <li class="nav-item">
+                            <a class="nav-link" href="./samjhautaSambandhama.html">सम्झौता सम्बन्धमा </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./billBhuktaaniSambandhama.html">बिल भुक्तानी सम्बन्धमा</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./myadThapSambandhama.html">म्याद थप सम्बन्धमा</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                            >
+                            अन्न्ने</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    
+
+                      <!-- ---------------- -->
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="./karyaAadesh.html"
+                          >कार्य आदेश</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./yojanaSamjauta.html"
+                          >योजना-सम्झौता</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./bankKhataSanchaalanRokka.html"
+                          >बैंक खाता संचालन/रोक्का</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./bankKhataFukuwa.html"
+                          >बैंक खाता फुकुवा</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./nikaasaAadeshFaaram.html"
+                          >निकासा आदेश फारम</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"
+                          >अन्न्ने</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item ">
+                  <a
+                    class="nav-link active"
+                    href="#"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    data-target="#submenu-4"
+                    aria-controls="submenu-4"
+                    ><i class="fas fa-paste"></i>रिपोर्ट</a
+                  >
+                  <div id="submenu-4" class="collapse submenu">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="./yojanaAnusharKaryakramPratibedan.html"
+                          >योजना अनुशार कार्यक्रम प्रतिबेदन</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./wodaAnusharKaryakramPratibedan.html"
+                          >वडा अनुशार कार्यक्रम प्रतिबेदन</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./karyakramSuchi.html"
+                          >कार्यक्रम सुची</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="./pragatiPratibedanAnushuchi1.html"
+                          > प्रगति प्रतिबेदन अनुशुची १</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="./pragatiPratibedanAnushuchi2.html"
+                          > प्रगति प्रतिबेदन अनुशुची २</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="./pragatiPratibedanAnushuchi3.html"
+                          > प्रगति प्रतिबेदन अनुशुची ३</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="./pragatiPratibedanAnushuchi4.html"
+                          > प्रगति प्रतिबेदन अनुशुची ४</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="./pragatiPratibedanAnushuchi5.html"
+                          > प्रगति प्रतिबेदन अनुशुची ५</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pragatiPratibedanAnushuchi6.html"
+                          > प्रगति प्रतिबेदन अनुशुची ६</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./karyakramSampannaBibaran.html"
+                          >कार्यक्रम सम्पन्न विवरण</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"
+                          >अन्न्ने</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    data-target="#submenu-5"
+                    aria-controls="submenu-5"
+                    ><i class="fas fa-arrows-alt-v"></i>अपलोड / दोव्न्लॉद</a
+                  >
+                  <div id="submenu-5" class="collapse submenu">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="./yojanaFormatDownload.html"
+                          >योजनाको फर्म्याट डाउन्लोड़</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./yojanaUpload.html"
+                          >योजना अपलोड</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./karyakramFormatDownload.html"
+                          >कार्यक्रमको फर्म्याट डाउन्लोड़</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./karyakramUpload.html"
+                          >कार्यक्रम अपलोड</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"
+                          >अन्न्ने</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    data-target="#submenu-6"
+                    aria-controls="submenu-6"
+                    ><i class="fas fa-align-center"></i>योजना प्रतिबेदन फारम 
+                  </a>
+                  <div id="submenu-6" class="collapse submenu">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="./upobhaoktaSamitileGarne.html"
+                          >उपोभोक्ता समितिले गर्ने</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pragatiPratibedanChitthi.html"
+                          >प्रगति प्रतिबेदन चिठी</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"
+                          >अन्न्ने</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link "
+                    href="#"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    data-target="#submenu-7"
+                    aria-controls="submenu-7"
+                    ><i class="fas fa-briefcase"></i>अन्ने कारोबार 
+                    </a
+                  >
+                  <div id="submenu-7" class="collapse submenu">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link " href="./bikashNirmaanKaryakramSampaadan.html">बिकाश निर्माण/कार्यक्रम सम्पादन गर्ने</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="./KharchaLekhneSambandhi.html"
+                          >खर्च लेख्ने सम्बन्धि</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./karyaAadeshNirdeshan.html"
+                          >कार्य आदेश/निर्देशन</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./peskiRakamUpalabdha.html"
+                          >पेस्की रकम उपलब्ध</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./sarbajanikParichhayanFaram.html"
+                          >सार्बजनिक परिक्षण फारम</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"
+                          >अन्न्ने</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    data-target="#submenu-8"
+                    aria-controls="submenu-8"
+                    ><i class="fas fa-shield-alt"></i>Security</a
+                  >
+                  <div id="submenu-8" class="collapse submenu">
+                    <ul class="nav flex-column mb-5">
+                      <li class="nav-item">
+                        <a class="nav-link" href="./registerUser.html"
+                          >Register User</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./changePassword.html"
+                          >Change Password</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"
+                        >
+                        Other</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- ============================================================== -->
+      <!-- end left sidebar -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- wrapper  -->
+      <!-- ============================================================== -->
+      <div class="dashboard-wrapper">
+        <div class="dashboard-ecommerce">
+          <div class="container-fluid dashboard-content ">
+            <!-- ============================================================== -->
+            <!-- pageheader  -->
+            <!-- ============================================================== -->
+            <div class="row hidden-print-area">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-header">
+                  <div class="page-head">
+                    <h3 class="pageheader-title text-center>गाउँ/नगरपालिका</h3>
+                    <h1 class="text-center">योजना ब्यबस्थापन प्रणाली</h1>
+                  </div>
+                  
+                  <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                          <a href="../index.html" class="breadcrumb-link">Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a  class="breadcrumb-link">रिपोर्ट</a>
+                          </li>
+                          <li class="breadcrumb-item">
+                            <a href="./pragatiPratibedanAnushuchi3.html " class="breadcrumb-link"> प्रगति प्रतिबेदन अनुशुची ३ </a>
+                          </li>
+                        
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end pageheader  -->
+            <!-- ============================================================== -->
+
+
+          <div class="row">
+            <!-- ============================================================== -->
+            <!-- data table  -->
+            <!-- ============================================================== -->
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="card">
+                <div class="card-header">
+                  <!-- -------------------------- -->
+
+                  <div class="row border-bottom pb-2 mb-3 hidden-print-area" style="margin-top:30px ">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label class="control-label"><b>कार्यक्रम</b> :</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="छान्नुहोस">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label class="control-label"><b>आर्थिक वर्ष</b> :</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="छान्नुहोस">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <button type="submit" class="btn-Search btn btn-primary fa fa-search mt-4"> खोज्नुहोस्</button>
+                        </div>
+                    </div>
+                </div> 
+                  <!-- ------------------ -->
+            <div class="row">
+              <!-- ============================================================== -->
+              <!-- modal  -->
+              <!-- ============================================================== -->
+                         
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="pt-0 mt-0 pb-4">
+                      <div class="card-head text-center">
+                        <h2 >अनुशुची ३</h2>
+                        <h3 class="m-0 p-0">(कार्यविधिको दफा ११ (५) सँग सम्वन्धित)</h3>
+                        <h3 class="m-0 p-0">सार्वजनिक परीक्षण फारामको ढाँचा पेश गरेको कार्यालय Office Name</h3>
+                      </div>
+                  </div>
+              </div>
+              <!-- ============================================================== -->
+              <!-- modal  -->
+              <!-- ============================================================== -->
+            </div>
+
+            <!--  -->
+            <div class="row mt-3" style="padding-top:20px">
+                <div class="col-sm-12">
+                    <h4><b> १. आयोजनाको नाम : &nbsp; </b></h4>
+                </div>
+                <div class="col-sm-6">
+                    <h5><b> क) स्थल : &nbsp; </b></h5>
+                </div>
+                <div class="col-sm-6">
+                    <h5><b>ख) लागत अनुमान : &nbsp; </b></h5>
+                </div>
+                <div class="col-sm-6">
+                    <h5><b>ग) आयोजना शुरू हुने मिति : &nbsp; </b></h5>
+                </div>
+                <div class="col-sm-6">
+                    <h5><b>घ) आयोजना सम्पन्न हुने मिति : &nbsp; </b></h5>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="row" style="padding-top:10px">
+                <div class="col-sm-12">
+                    <h4><b>२. उपभोक्ता समिति / सामुदायिक संस्थाको </b></h4>
+                </div>
+                <div class="col-sm-6">
+                    <h5><b>क) अध्यक्षको नाम : &nbsp;</b></h5>
+                </div>
+                <div class="col-sm-6">
+                    <h5><b>ख) सदस्य संख्या :&nbsp;</b></h5>
+                    <div class="col-sm-6 pl-3">
+                        <h5>
+                            <b> 
+                                महिलाः  &nbsp; <br>  <br>  
+                                 पुरूषः  &nbsp;
+                             </b>
+                         </h5>
+                     </div>
+                </div>
+                
+            </div>
+
+            <!--  -->
+            <div class="row" style="padding-top:20px">
+                <div class="col-sm-12">
+                   <h4><b> ३. आम्दानी खर्चको विवरण :&nbsp;</b></h4>
+                </div>
+                <div class="col-sm-3">
+                    <h5><b>क) आम्दानीतर्फ जम्मा :&nbsp;</b></h5>
+                </div>
+                <!--  -->
+                <div class="col-sm-12">
+                    <div class="row" style="padding-top:3px">
+                        <div class="col-sm-12">
+                            <table class="table table-bordered table-condensed " style="width:100%">
+                                <thead >
+                                    <tr style="width:43%;border: 1px solid black">
+                                        <th><b>आम्दानीको श्रोत (कहाँबाट कति नगद तथा जिन्सी प्राप्त भयो खुलाउने)</b></th>
+                                        <th style="width:30%"><b>रकम वा परिमाण</b></th>
+                                        <th style="width:27%"><b>कैफियत</b></th>
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    <tr >
+                                        <td>@item.IncomeSource</td>
+                                        <td>@item.Amount</td>
+                                        <td>@item.Remark</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            
+            <div class="row" style="padding-top:3px">
+                <div class="col-sm-12 ">
+                    <table class="table table-bordered table-condensed " style="width:100%">
+                        <thead >
+                            <tr style="width:40%;border: 1px solid black">
+                                <th><b>१. खर्चको विवरण</b></th>
+                                <th><b>दर</b></th>
+                                <th><b>परिमाण</b></th>
+                                <th><b>जम्मा</b></th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr>
+                                <td>@item.Product</td>
+                                <td>@item.Rate</td>
+                                <td>@item.Quantity</td>
+                                <td>@item.Total</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-bordered table-condensed " style="width:100%">
+                        <thead >
+                            <tr style="width:40%;border: 1px solid black">
+                                <th> <b>२. ज्याला (केमा कति ज्याला भुक्तानी भयो?)</b></th>
+                                <th><b>दर</b></th>
+                                <th><b>परिमाण</b></th>
+                                <th><b>जम्मा</b></th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr>
+                                <td>@item.Wages</td>
+                                <td>@item.Rate</td>
+                                <td>@item.Quantity</td>
+                                <td>@item.Total</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-bordered table-condensed " style="width:100%">
+                        <thead >
+                            <tr style="width:40%;border: 1px solid black">
+                                <th> <b> ३. श्रमदान (कति जनाले श्रम दान गरे?)</b></th>
+                                <th><b>दर</b></th>
+                                <th><b>परिमाण</b></th>
+                                <th><b>जम्मा</b></th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr style="height:40px">
+                                <td>@item.Labour</td>
+                                <td>@item.Rate</td>
+                                <td>@item.Quantity</td>
+                                <td>@item.Total</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-bordered table-condensed " style="width:100%">
+                        <thead >
+                            <tr style="width:40%;border: 1px solid black">
+                                <th> <b>४. व्यबस्थापन खर्च(दुवानी तथा अन्य खर्च)</b></th>
+                                <th><b>दर</b></th>
+                                <th><b>परिमाण</b></th>
+                                <th><b>जम्मा</b></th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr style="height:40px">
+                                <td>@item.Management</td>
+                                <td>@item.Rate</td>
+                                <td>@item.Quantity</td>
+                                <td>@item.Total</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="row pt-4  ">
+                <div class="col-sm-3">
+                    <h4><b>ग) मौज्दात </b></h4>
+                </div>
+                <div class="col-sm-12">
+                    <div class="row" style="padding-top:3px">
+                        <div class="col-sm-12">
+                            <table class="table table-bordered table-condensed " style="width:100%">
+                                <thead >
+                                    <tr style="width:40%;border: 1px solid black">
+                                        <th> <b>विवरण</b></th>
+                                        <th><b>रकम वा परिमाण</b></th>
+                                        <th><b>कैफियत</b></th>
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    <tr>
+                                        <td>@item.Product</td>
+                                        <td>@item.Amount</td>
+                                        <td>@item.Remark</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="row pt-4" >
+                <div class="col-sm-12">
+                    <h4><b>घ) भुक्तानी दिन बाँकी </b></h4>
+                </div>
+                <div class="col-sm-12">
+                    <div class="row" style="padding-top:3px">
+                        <div class="col-sm-12">
+                            <table class="table table-bordered table-condensed " style="width:100%">
+                                <thead ">
+                                    <tr>
+                                        <th><b>विवरण</b></th>
+                                        <th><b>रकम वा परिमाण</b></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr style="height:40px">
+                                            <td>@item.Bibaran</td>
+                                            <td>@item.Amount</td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="row pt-4">
+                <div class="col-sm-12">
+                    <h4><b>४. सम्पन्न आयोजनाको लक्ष्य तथा प्रगति विवरण</b></h4>
+                </div>
+                <div class="col-sm-12">
+                    <div class="row" style="padding-top:5px">
+                        <div class="col-sm-12">
+                            <table class="table table-bordered table-condensed " style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th><b>कामको विवरण</b></th>
+                                        <th><b>लक्ष्य</b></th>
+                                        <th><b>प्रगति</b></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="height:40px">
+                                        <td>@item.WorkBibran</td>
+                                        <td>@item.Aim</td>
+                                        <td>@item.Progress</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="row pt-4" >
+                <div class="col-sm-12">
+                    <h4><b>५. आयोजनाले पु¥याएको लाभ तथा प्रत्यक्ष रूपमा लाभान्वित जनसंख्या (आयोजना सञ्चालन भएको स्थानका उपभोक्ताहरू) । </b></h4>
+                </div>
+            </div>
+            <!--  -->
+            <div class="row" style="padding-top:3px">
+                <div class="col-sm-12">
+                    <h4><b>६. आयोजना सञ्चालन गर्दा आयोजक संस्थामा कामको जिम्मेवारी बाँडफाँड (कस कसले कस्तो कस्तो कामको जिम्मेवारी लिएका &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;थिए(खुलाउने)</b></h4>
+                </div>
+            </div>
+            <!--  -->
+            <div class="row pt-3" >
+                <div class="col-sm-12">
+                    <table class="table table-bordered table-condensed " style="width:100%">
+                        <thead>
+                            <tr>
+                                <th><b>नाम / थर</b></th>
+                                <th><b>वडा नं.</b></th>
+                                <th><b>जिम्मेवारी</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height:40px">
+                                <td>@item.Name</td>
+                                <td>@item.WardNo</td>
+                                <td>@item.Responsibility</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row pt-4" >
+                <div class="col-sm-12">
+                    <h4><b>उ.स./व्य.स./संघ संस्थाको अध्यक्ष</b></h4>
+                </div>
+                <div class="col-sm-6">
+                    <p><b>नामथरः</b></p>
+                </div>
+                <div class="col-sm-6 ">
+                    <p><b>पदः</b></p>
+                </div>
+                <div class="col-sm-6 pt-3">
+                    <p><b>ठेगाना:</b></p>
+                </div>
+                <div class="col-sm-6 pt-3">
+                    <p><b>सम्पर्क नं:</b></p>
+                </div>
+                <div class="col-sm-6 pt-3">
+                    <p><b>मिति:</b></p>
+                </div>
+                <div class="col-sm-12 pt-3">
+                    <p>
+                       <b> द्रष्टव्यः सार्वजनिक परिक्षण कार्यक्रममा उपस्थित सरोकारवालाहरुको उपस्थिति अनिवार्य रूपमा संलग्न हुनुपर्नेछ ।</b>
+                    </p>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="row table-responsive pl-3 hidden-print-area" >
+                <div class="modal-footer mt-5">
+                  <a href="javascript:window.print()" class="btn btn-primary ">Print</a>
+                  <a href="#" class="btn btn-primary">Export To Excel</a>
+              </div>
+            </div>
+        </div>
+            <!-- ============================================================== -->
+            <!-- end data table  -->
+            <!-- ============================================================== -->
+          </div>
+          <!-- ------------------------ -->
+         
+          <!-- -------------------------- -->
+
+
+          </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- footer -->
+        <!-- ============================================================== -->
+            </div>
+          </div>
+        </div> -->
+        <!-- ============================================================== -->
+        <!-- end footer -->
+        <!-- ============================================================== -->
+      </div>
+      <!-- ============================================================== -->
+      <!-- end wrapper  -->
+      <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end main wrapper  -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <!-- jquery 3.3.1 -->
+    <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <!-- bootstap bundle js -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- slimscroll js -->
+    <script src="../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <!-- main js -->
+    <script src="../assets/libs/js/main-js.js"></script>
+    <!-- chart chartist js -->
+    <script src="../assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+    <!-- sparkline js -->
+    <script src="../assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+    <!-- morris js -->
+    <script src="../assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+    <script src="../assets/vendor/charts/morris-bundle/morris.js"></script>
+
+  </body>
+</html>

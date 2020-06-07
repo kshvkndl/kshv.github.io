@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      href="../assets/vendor/fonts/circular-std/style.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/libs/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/fonts/fontawesome/css/fontawesome-all.css"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    </style>
+  </head>
+  <!-- ============================================================== -->
+  <!-- signup form  -->
+  <!-- ============================================================== -->
+
+  <body>
+    <!-- ============================================================== -->
+    <!-- signup form  -->
+    <!-- ============================================================== -->
+    <!-- <form class="splash-container">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="mb-1">Registrations Form</h3>
+          <p>Please enter your user information.</p>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              name="nick"
+              required=""
+              placeholder="Username"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control form-control-lg"
+              type="email"
+              name="email"
+              required=""
+              placeholder="E-mail"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control form-control-lg"
+              id="pass1"
+              type="password"
+              required=""
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control form-control-lg"
+              required=""
+              placeholder="Confirm"
+            />
+          </div>
+          <div class="form-group pt-2">
+            <button class="btn btn-block btn-primary" type="submit">
+              Register My Account
+            </button>
+          </div>
+        </div>
+        <div class="card-footer bg-white">
+          <p>
+            Already member?
+            <a href="./login.html" class="text-secondary">Login Here.</a>
+          </p>
+        </div>
+      </div>
+    </form> -->
+    <!-- -------------- -->
+
+    <form class="container">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="mb-1">Registrations Form</h3>
+          <p>Please enter your user information.</p>
+        </div>
+        <div class="card-body">
+          <form class="needs-validation">
+            <div class="row border-bottom pb-4">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                    <div class="row border-right">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12  ">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="validationCustom01"
+                              placeholder="First Name"
+                              name="firstName"
+                              required
+                            />
+                          </div>
+                          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="validationCustom02"
+                              placeholder="Middle Name"
+                              name="middleName"
+                              required
+                            />
+                          </div>
+                          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="validationCustom02"
+                              placeholder="Last Name"
+                              name="lastName"
+                              required
+                            />
+                          </div>
+
+                          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 pt-3">
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="validationCustom02"
+                              placeholder="Email Address"
+                              name="emailAddress"
+                              required
+                            />
+                          </div>
+
+                          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 pt-3">
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="validationCustom02"
+                              placeholder="Choose Password"
+                              name="enterPassword"
+                              required
+                            />
+                          </div>
+        
+                          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 pt-3">
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="validationCustom02"
+                              placeholder="Conform Password"
+                              name="conformPassword"
+                              required
+                            />
+                          </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                    <div class="form-row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom03"
+                            placeholder="City"
+                            name="cityName"
+                            required
+                          />
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom04"
+                            placeholder="State"
+                            name="stateName"
+                            required
+                          />
+                        </div>
+                        
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="validationCustom05"
+                            placeholder="Zip"
+                            name="zipCode"
+                            required
+                          />
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12  ">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="validationCustom04"
+                              placeholder="State"
+                              name="stateName"
+                              required
+                            />
+                          </div>
+                          
+                         
+                        
+                      </div>
+                </div>
+
+              </div> 
+              <di class="row mt-3">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                    <button class="btn btn-primary" type="submit">
+                      Register My Account
+                    </button>
+                  </div>
+              </di>
+              
+
+          </form>
+        </div>
+
+        <div class="card-footer bg-white">
+          <p>
+            Already member?
+            <a href="./login.html" class="text-secondary">Login Here.</a>
+          </p>
+        </div>
+      </div>
+    </form>
+
+    <!-- ----------------- -->
+      <!-- ============================================================== -->
+      <!-- validation form -->
+      <!-- ============================================================== -->
+      
+
+      <!-- ============================================================== -->
+      <!-- end validation form -->
+      <!-- ============================================================== -->
+    </div>
+  </body>
+</html>
